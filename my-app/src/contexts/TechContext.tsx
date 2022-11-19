@@ -46,6 +46,7 @@ import {
         const deleteTech = await api.delete<IUserTechs>(`/users/techs/${id.id}`);
         toast.success("Tecnologia deletada com sucesso", {
           autoClose: 1000,
+          theme: "dark"
         });
       } catch (error) {
         console.error(error);
@@ -65,6 +66,7 @@ import {
         const response = await api.post<IUserTechs>(`/users/techs`, data);
         toast.success("Tecnologia cadastrada", {
           autoClose: 1000,
+          theme: "dark"
         });
         setTechs([...techs, response.data]);
         setModalIsOpen(false);
@@ -72,6 +74,7 @@ import {
         console.error(error);
         toast.error("Falha ao cadastrar tecnologia, verifique as informações", {
           autoClose: 1000,
+          theme: "dark"
         });
       } finally {
         setLoadingModal(false);

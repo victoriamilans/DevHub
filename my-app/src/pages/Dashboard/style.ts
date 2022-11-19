@@ -37,7 +37,7 @@ export const StyledHeader = styled.header`
 
   border-bottom: 1px solid var(--color-grey3);
 
-  background-color: var(--color-grey4);
+  background: var(--color-grey4);
 
   div {
     width: 100%;
@@ -46,6 +46,10 @@ export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    img{
+      width: 100px;
+    }
   }
 
   @media (min-width: 1000px) {

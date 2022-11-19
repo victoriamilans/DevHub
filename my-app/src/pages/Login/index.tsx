@@ -1,7 +1,7 @@
 import { Container } from "../../components/Container/style";
 import { Input } from "../../components/Input/style";
 import { Button, StyledLinkLogin } from "../../components/Button/style";
-import { StyledLoading } from "../../components/Loading";
+import { Loading } from "../../components/Loading";
 import Spinner from "react-spinner-material";
 import logo from "../../assets/logo.png";
 import eyes from "../../assets/eyes.png";
@@ -47,7 +47,7 @@ export const Login = ({ type, inputType }: IUserLoginProps) => {
       {loading ? (
         <>
           <Spinner radius={120} color={"#fff"} stroke={2} visible={true} />
-          <StyledLoading>Carregando</StyledLoading>
+          <Loading/>
         </>
       ) : (
         <>

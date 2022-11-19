@@ -15,7 +15,7 @@ import {
   ModalOverlay,
   StyledTechsHeader,
 } from "../../components/TechsModal/style";
-import { StyledLoading } from "../../components/Loading";
+import { Loading } from "../../components/Loading";
 import Spinner from "react-spinner-material";
 
 export interface IUserTechs {
@@ -41,7 +41,7 @@ export const Dashboard = () => {
       {loadingModal || user === null ? (
         <div className="loading">
           <Spinner radius={120} color={"#fff"} stroke={2} visible={true} />
-          <StyledLoading>Carregando</StyledLoading>
+          <Loading/>
         </div>
       ) : (
         <StyledDashContainer>

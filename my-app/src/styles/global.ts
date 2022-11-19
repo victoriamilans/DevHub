@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100vw;
         height: 100vh;
 
-    background-color: var(--color-grey4);
+    background: var(--color-grey4);
   }
 
     h1, h2, h3, h4, h5, h6, p, span, li{
@@ -38,9 +38,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        --color-primary: #FF577F;
-        --color-primary-focus: #FF427F;
-        --color-primary-negative: #59323F;
+        --color-primary: #6D39FD;
+        --color-primary-focus: #4D29B0;
+        --color-primary-negative: #4D29B0;
         --color-grey0: #F8F9FA;
         --color-grey1: #868E96;
         --color-grey2: #343B41;
@@ -48,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
         --color-grey4: #121214;
         --color-white: #fff;
         --color-sucess: #3FE864;
-        --color-error: #E83F5B;
+        --color-error: #FB3838;
     }
 
 

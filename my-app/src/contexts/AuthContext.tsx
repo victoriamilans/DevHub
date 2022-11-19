@@ -56,6 +56,7 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
       window.localStorage.setItem("@userID-KenzieHub", response.data.user.id);
       toast.success("Login efetuado com sucesso", {
         autoClose: 1000,
+        theme: "dark"
       });
       setToken(response.data.token);
       setUser(response.data.user);
@@ -63,6 +64,7 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
     } catch (error) {
       toast.error("Falha ao logar, verifique as informações", {
         autoClose: 1000,
+        theme: "dark"
       });
     } finally {
       setLoading(false);
@@ -99,11 +101,13 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
       await api.post("/users", newData);
       toast.success("Conta criada com sucesso!", {
         autoClose: 1000,
+        theme: "dark"
       });
       navigate(`/login`);
     } catch {
       toast.error("Falha ao criar a conta, tente outro email!", {
         autoClose: 1000,
+        theme: "dark"
       });
     } finally {
       setLoading(false);

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledTechCard = styled.li`
-  background-color: var(--color-grey4);
+  background: var(--color-grey4);
 
   width: 95%;
   height: 55px;
@@ -24,9 +24,6 @@ export const StyledTechCard = styled.li`
     height: 100%;
   }
 
-  img {
-    visibility: hidden;
-  }
 
   h2 {
     margin: 0px;
